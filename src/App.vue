@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Jogo da Memória - Vue.js</h1>
     <Table/>
   </div>
 </template>
