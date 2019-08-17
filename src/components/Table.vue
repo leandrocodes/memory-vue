@@ -1,5 +1,14 @@
 <template>
 	<div class="table">
+		<card :turnCard='turned'   :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+
+		<card :carta="{name: 'comp',
+      img: 'https://image.flaticon.com/icons/svg/1149/1149168.svg'}"></card>
+
+		<card :carta="{name: 'config',
+      img: 'https://image.flaticon.com/icons/svg/148/148909.svg'}"></card>
+
 		<card :carta="{name: 'lupa',
       img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
 
@@ -8,34 +17,29 @@
 
 		<card :carta="{name: 'config',
       img: 'https://image.flaticon.com/icons/svg/148/148909.svg'}"></card>
-	
-  	<card :carta="{name: 'lupa',
-      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
-	
-		<card :carta="{name: 'comp',
-      img: 'https://image.flaticon.com/icons/svg/1149/1149168.svg'}"></card>
-	
-		<card :carta="{name: 'config',
-      img: 'https://image.flaticon.com/icons/svg/148/148909.svg'}"></card>
-
-
-		<card :carta="{name: 'idea',
-      img: 'https://image.flaticon.com/icons/svg/427/427735.svg'}"></card>
-	
-  	<card :carta="{name: 'brain',
-      img: 'https://image.flaticon.com/icons/svg/791/791072.svg'}"></card>
-	
-  	<card :carta="{name: 'pencils',
-      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"></card>
 
 		<card :carta="{name: 'idea',
       img: 'https://image.flaticon.com/icons/svg/427/427735.svg'}"></card>
 
-  	<card :carta="{name: 'brain',
+		<card :carta="{name: 'brain',
       img: 'https://image.flaticon.com/icons/svg/791/791072.svg'}"></card>
-      
-  	<card :carta="{name: 'pencils',
-      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"></card>
+
+		<card
+			:carta="{name: 'pencils',
+      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"
+		></card>
+
+		<card :carta="{name: 'idea',
+      img: 'https://image.flaticon.com/icons/svg/427/427735.svg'}"></card>
+
+		<card :carta="{name: 'brain',
+      img: 'https://image.flaticon.com/icons/svg/791/791072.svg'}"></card>
+
+		<card
+			:carta="{name: 'pencils',
+      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"
+		></card>
+    
 	</div>
 </template>
 
@@ -44,12 +48,18 @@ import Card from "./Card";
 export default {
 	components: {
 		Card
-	}
+  },
+  data(){
+    return{
+      turned: false
+    }
+  }
 };
 </script>
 
 <style scoped>
 .table {
+	border-radius: 0.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
