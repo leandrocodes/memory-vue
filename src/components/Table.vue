@@ -1,17 +1,29 @@
 <template>
   <div class="table">
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
+    <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+        <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+          <card :carta="{name: 'lupa',
+      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
   </div>
 </template>
 
