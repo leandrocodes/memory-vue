@@ -22,20 +22,20 @@
 		<card :carta="{name: 'idea',
       img: 'https://image.flaticon.com/icons/svg/427/427735.svg'}"></card>
 	
-  	<card :carta="{name: 'lupa',
-      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+  	<card :carta="{name: 'brain',
+      img: 'https://image.flaticon.com/icons/svg/791/791072.svg'}"></card>
 	
-  	<card :carta="{name: 'lupa',
-      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+  	<card :carta="{name: 'pencils',
+      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"></card>
 
 		<card :carta="{name: 'idea',
       img: 'https://image.flaticon.com/icons/svg/427/427735.svg'}"></card>
 
-		<card :carta="{name: 'lupa',
-      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
-
-		<card :carta="{name: 'lupa',
-      img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
+  	<card :carta="{name: 'brain',
+      img: 'https://image.flaticon.com/icons/svg/791/791072.svg'}"></card>
+      
+  	<card :carta="{name: 'pencils',
+      img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg'}"></card>
 	</div>
 </template>
 
