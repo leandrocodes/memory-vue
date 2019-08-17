@@ -1,6 +1,6 @@
 <template>
   <div class="card" @click="turnCard">
-      <div  class="content"  v-show="turned">
+      <div  class="content"  v-show="turned == true">
           <img :src="carta.img" alt="">
           <p>{{carta.name}}</p>
       </div>
@@ -18,8 +18,9 @@ export default {
     },
     methods:{
         turnCard(){
-            this.$emit('turnCard', !this.turned)
-            console.log(this.turned)
+            this.$emit('turnCard', (turned)=>{
+                this.turned = true
+            })
         }
     }
 
