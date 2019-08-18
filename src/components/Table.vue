@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Card from "./Card"
+import Card from './Card'
 import cards from '../cards'
 export default {
 	components: {

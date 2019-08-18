@@ -1,6 +1,6 @@
 <template>
 	<div class="card" @click="$emit('flip')">
-		<div v-show = "card.flipped" class="content">
+		<div v-if = "card.flipped" class="content">
 			<img :src="card.img" alt />
 			<p>{{card.name}}</p>
 			<p>{{card.flipped}}</p>
