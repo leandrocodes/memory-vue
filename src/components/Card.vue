@@ -1,8 +1,9 @@
 <template>
   <div class="card">
-      <div  class="content">
+      <div v-if="flip" class="content" @click="turnCard">
           <img :src="carta.img" alt="">
           <p>{{carta.name}}</p>
+          <p>{{flip}}</p>
       </div>
   </div>
 </template>
@@ -13,12 +14,13 @@ export default {
         carta:{
             name: '',
             img: ''
-        }
+        },
+        flip: Boolean
     },
     methods:{
         turnCard(){
-            this.$emit('turnCard', (turned)=>{
-                this.turned = true
+            this.$emit('flipCard', ()=>{
+                this.flip = true
             })
         }
     }
