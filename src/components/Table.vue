@@ -23,6 +23,16 @@ export default {
 	methods: {
 		onFlip(id) {
 			console.log(id);
+			if (id === this.first || this.second) return;
+
+			if (!this.first) {
+				this.first = id
+				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
+			} else {
+				this.second = id
+				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
+			}
+			
 		}
 	}
 };
