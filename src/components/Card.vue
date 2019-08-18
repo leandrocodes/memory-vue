@@ -1,6 +1,6 @@
 <template>
-	<div class="card" @click="$emit('flip', card.id)">
-		<div v-if = "card.flipped" class="content">
+	<div class="card" @click="$emit('flip', index)">
+		<div v-if="card.flipped" class="content">
 			<img :src="card.img" alt />
 			<p>{{card.name}}</p>
 			<p>{{card.flipped}}</p>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-	props: ['card'],
+	props: ['card', 'index'],
 	methods: {}
 }
 </script>

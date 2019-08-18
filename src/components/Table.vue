@@ -1,6 +1,6 @@
 <template>
 	<div class="table">
-		<card :card="card" v-for="(card, index) in cards" :key="index" @flip="onFlip"></card>
+		<card :index='index' :card="card" v-for="(card, index) in cards" :key="index" @flip="onFlip"></card>
 	</div>
 </template>
 
@@ -18,26 +18,24 @@ export default {
 			cards,
 			first: null,
 			second: null,
-			clickCount: -0
 		};
 	},
 	methods: {
-		onFlip(id) {
-			console.log(id);
-			if (id === this.first || this.second) return;
+		onFlip(index) {
 
-			if (!this.first) {
-				this.first = id
-				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
-				this.clickCount++
-			} else {
-				this.second = id
-				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
-				this.clickCount++
+			if(this.cards[index].flipped) return
+
+			this.cards[index].flipped = true
+			if(this.first === null) this.first = index
+			else if(this.second === null) this.second = index
+
+			if(this.first !== null && this.second !== null){
+				if(this.cards[this.first].name != this.cards[this.second].name){
+					this.cards[this.first].flipped = this.cards[this.second].flipped = false
+				}
+				this.first = this.second = null
 			}
-			
 		}
-
 	}
 }
 </script>
