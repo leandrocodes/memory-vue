@@ -1,5 +1,5 @@
 <template>
-	<div class="card" @click="$emit('flip')">
+	<div class="card" @click="$emit('flip', card.id)">
 		<div v-if = "card.flipped" class="content">
 			<img :src="card.img" alt />
 			<p>{{card.name}}</p>

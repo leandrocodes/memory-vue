@@ -1,26 +1,31 @@
 <template>
 	<div class="table">
-		<card :card="card" v-for="(card, index) in cards" :key="index" @flip='card.flipped = !card.flipped'>
-		</card>
+		<card :card="card" v-for="(card, index) in cards" :key="index" @flip="onFlip"></card>
 	</div>
 </template>
 
 <script>
-import Card from './Card'
-import cards from '../cards'
+import Card from "./Card";
+import cards from "../cards";
+import { setTimeout } from "timers";
 export default {
 	components: {
 		Card
 	},
+	created() {},
 	data() {
 		return {
-			cards
-		}
+			cards,
+			first: null,
+			second: null
+		};
 	},
-	computed:{
-
+	methods: {
+		onFlip(id) {
+			console.log(id);
+		}
 	}
-}
+};
 </script>
 
 <style scoped>
