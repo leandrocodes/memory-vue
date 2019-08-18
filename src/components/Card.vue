@@ -1,23 +1,16 @@
 <template>
-	<div @click="flip = !flip" class="card">
-		<div v-if = "flip" class="content">
-			<img :src="carta.img" alt />
-			<p>{{carta.name}}</p>
-			<p>{{flip}}</p>
+	<div class="card" @click="$emit('flip')">
+		<div v-show = "card.flipped" class="content">
+			<img :src="card.img" alt />
+			<p>{{card.name}}</p>
+			<p>{{card.flipped}}</p>
 		</div>
-
 	</div>
 </template>
 
 <script>
 export default {
-	props: {
-		carta: {
-			name: "",
-			img: ""
-		},
-		flip: Boolean
-	},
+	props: ['card'],
 	methods: {}
 }
 </script>
