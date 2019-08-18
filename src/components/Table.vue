@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import Card from "./Card";
+import Card from "./Card"
 export default {
 	components: {
 		Card
@@ -62,7 +62,7 @@ export default {
       flip: false
     }
   }
-};
+}
 </script>
 
 <style scoped>

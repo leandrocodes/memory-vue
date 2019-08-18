@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <h1>Jogo da Memória - Vue.js</h1>
-    <Table/>
-  </div>
+	<div id="app">
+		<h1>Jogo da Memória - Vue.js</h1>
+		<Table />
+	</div>
 </template>
 
 <script>
-import Table from './components/Table.vue'
+import Table from "./components/Table.vue";
 
 export default {
-  name: 'app',
-  components: {
-    Table
-  }
+	name: "app",
+	components: {
+		Table
+	}
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	margin-top: 60px;
 }
 </style>
