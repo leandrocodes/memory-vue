@@ -7,7 +7,7 @@
 <script>
 import Card from "./Card";
 import cards from "../cards";
-import { setTimeout } from "timers";
+import { setTimeout } from 'timers';
 export default {
 	components: {
 		Card
@@ -17,7 +17,8 @@ export default {
 		return {
 			cards,
 			first: null,
-			second: null
+			second: null,
+			clickCount: -0
 		};
 	},
 	methods: {
@@ -28,14 +29,17 @@ export default {
 			if (!this.first) {
 				this.first = id
 				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
+				this.clickCount++
 			} else {
 				this.second = id
 				this.cards.find(i => i.id === id).flipped = !this.cards.find(i => i.id === id).flipped
+				this.clickCount++
 			}
 			
 		}
+
 	}
-};
+}
 </script>
 
 <style scoped>
