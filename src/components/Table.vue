@@ -22,16 +22,25 @@ export default {
 	},
 	methods: {
 		onFlip(index) {
+			
+			let cardList = this.cards
 
-			if(this.cards[index].flipped) return
+			if(cardList[index].flipped) return
 
-			this.cards[index].flipped = true
+			cardList[index].flipped = true
+			
 			if(this.first === null) this.first = index
 			else if(this.second === null) this.second = index
 
-			if(this.first !== null && this.second !== null){
-				if(this.cards[this.first].name != this.cards[this.second].name){
-					this.cards[this.first].flipped = this.cards[this.second].flipped = false
+			let firstCard = this.first
+			let secondCard = this.second
+
+			if(firstCard !== null && secondCard !== null){
+				if(cardList[firstCard].name != cardList[secondCard].name){
+					setTimeout(()=>{
+						cardList[firstCard].flipped = false
+						cardList[secondCard].flipped = false
+					}, 1000)
 				}
 				this.first = this.second = null
 			}
