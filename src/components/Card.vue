@@ -1,6 +1,6 @@
 <template>
-	<div class="card">
-		<div v-if="flip" class="content">
+	<div @click="flip = !flip" class="card">
+		<div v-if = "flip" class="content">
 			<img :src="carta.img" alt />
 			<p>{{carta.name}}</p>
 			<p>{{flip}}</p>

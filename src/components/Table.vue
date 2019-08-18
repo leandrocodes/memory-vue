@@ -1,6 +1,6 @@
 <template>
 	<div class="table">
-		<card @click="!flip" :flip="flip" :carta="{name:'lupa',img:'https://image.flaticon.com/icons/svg/1150/1150626.svg'}">
+		<card  :flip="flip" :carta="{name:'lupa',img:'https://image.flaticon.com/icons/svg/1150/1150626.svg'}">
 		</card>
 
 		<card :carta="{name: 'comp',img: 'https://image.flaticon.com/icons/svg/1149/1149168.svg'}">
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import Card from "./Card";
+import Card from "./Card"
 export default {
 	components: {
 		Card
@@ -48,9 +48,9 @@ export default {
 	data() {
 		return {
 			flip: false
-		};
+		}
 	}
-};
+}
 </script>
 
 <style scoped>
