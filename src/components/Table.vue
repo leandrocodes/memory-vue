@@ -40,7 +40,7 @@ export default {
 					setTimeout(()=>{
 						cardList[firstCard].flipped = false
 						cardList[secondCard].flipped = false
-					}, 1000)
+					}, 500)
 				}
 				this.first = this.second = null
 			}
