@@ -1,6 +1,6 @@
 <template>
-  <div class="card" @click="turnCard">
-      <div  class="content"  v-show="turned == true">
+  <div class="card">
+      <div  class="content">
           <img :src="carta.img" alt="">
           <p>{{carta.name}}</p>
       </div>
@@ -13,8 +13,7 @@ export default {
         carta:{
             name: '',
             img: ''
-        },
-        turned: false
+        }
     },
     methods:{
         turnCard(){

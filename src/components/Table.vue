@@ -1,6 +1,6 @@
 <template>
 	<div class="table">
-		<card :turnCard='turned' :turned='turned'  :carta="{name: 'lupa',
+		<card :carta="{name: 'lupa',
       img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg'}"></card>
 
 		<card :carta="{name: 'comp',
@@ -51,7 +51,7 @@ export default {
   },
   data(){
     return{
-      turned: false
+      
     }
   }
 };
