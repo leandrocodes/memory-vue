@@ -16,6 +16,9 @@ export default {
 		return {
 			cards
 		}
+	},
+	computed:{
+
 	}
 }
 </script>
