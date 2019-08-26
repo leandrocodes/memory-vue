@@ -1,4 +1,4 @@
-export default[
+let array = [
     
     {name:'lupa',img:'https://image.flaticon.com/icons/svg/1150/1150626.svg', 
         flipped: false, id: 12},
@@ -36,3 +36,20 @@ export default[
     {name: 'pencils',img: 'https://image.flaticon.com/icons/svg/1497/1497726.svg', 
         flipped: false, id: 11}
 ]
+
+function shuffle(array){
+    let currentIndex = array.length, tempValue, randomIndex
+
+    while(0 !== currentIndex){
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex -= 1
+
+        tempValue = array[currentIndex]
+        array[currentIndex] = array[randomIndex]
+        array[randomIndex] = tempValue
+    }
+    return array
+}
+
+const cards = shuffle(array)
+console.log(cards) 
