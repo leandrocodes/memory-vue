@@ -1,14 +1,10 @@
-let array = [
-    
+export let array = [
     {name:'lupa',img:'https://image.flaticon.com/icons/svg/1150/1150626.svg', 
         flipped: false, id: 12},
-    
     {name: 'comp',img: 'https://image.flaticon.com/icons/svg/1149/1149168.svg', 
         flipped: false, id: 1},
-    
     {name: 'config',img: 'https://image.flaticon.com/icons/svg/148/148909.svg', 
         flipped: false, id: 2},
-    
     {name: 'lupa',img: 'https://image.flaticon.com/icons/svg/1150/1150626.svg', 
         flipped: false, id: 3},
     
@@ -37,7 +33,8 @@ let array = [
         flipped: false, id: 11}
 ]
 
-function shuffle(array){
+async function cards(){
+    let array = this.array
     let currentIndex = array.length, tempValue, randomIndex
 
     while(0 !== currentIndex){
@@ -51,5 +48,6 @@ function shuffle(array){
     return array
 }
 
-const cards = shuffle(array)
-console.log(cards) 
+export default{
+    cards
+}
