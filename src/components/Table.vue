@@ -6,7 +6,7 @@
 
 <script>
 import Card from "./Card";
-import cards from "../cards";
+import cards from "../cardArray";
 import { setTimeout } from 'timers';
 export default {
 	components: {
